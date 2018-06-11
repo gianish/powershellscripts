@@ -1,0 +1,5 @@
+{
+  "bases": [
+    { "source":"Single", "dateEstablished":"", "method": "PercentPay", "initialYears": 30, "remainingYears": 21, "currentBalance": 0, "declaredPayments": ["{AmortHistory}"] },
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "numberOfCensusPartitions": "1",
+  "valuationDate": "2017-06-30",
+  "plan.friendlyName": "{FriendlyName}",
+  
+  "isPension": false,
+  "opebVersion": "2",
+  "opeb.hasDental": false,
+
+  "assets": "{Assets}",
+  "adjustment.salary": "{SalaryAdj}",
+  "adjustment.benefits.active": "{ActiveBenAdj}",
+  "adjustment.opeb.retiree.medical.single":"{ORM1RetAdj}",
+  "adjustment.opeb.retiree.medical.twoParty":"{ORM2RetAdj}",
+  "adjustment.opeb.retiree.dental.single":"{ORD1RetAdj}",
+  "adjustment.opeb.retiree.dental.twoParty":"{ORD2RetAdj}",
+  "amortization.history.dollar": "array:2016 {AmortHistory}",
+  "employer.normalCost.history": "array:2016 {ERNCHistoryPct}",
+
+  "assumption.discount.rate": "array:2017 0.07",
+  "experience.asset.returns": "array:2017 0.07",
+  "experience.censusGrowth.rate": "value:0.0",
+  "assumption.payroll.growth": "value:0.02875",
+  "experience.payrollGrowth.rate": "value:0.02875",
+
+  "amortization.method": "PercentPay",
+  "amortization.years": "21",
+  "amortization.model": "SingleBase",
+  "amortization.contrib.model": "DeclaredPayment",
+  "plan.time.lag": 1,
+  "#cost.grouping.method": "ClassAndTier",
+
+  "assumption.mortality.spouseFemaleSetback": 3,
+
+  "provision.eecontrib.pct": "value: 0",
+
+  "provision.opeb.simpleRates": "table:Premiums\\Vacaville.OPEB.2017.v1",
+  "assumption.medical.trends": "table:Trends\\Vacaville.OPEB.2017.v1",
+  "assumption.medical.cost.female": "table:Claims\\Vacaville.OPEB.2017.Female.v2",
+  "assumption.medical.cost.male": "table:Claims\\Vacaville.OPEB.2017.Male.v2",
+  
+  "assumption.medical.participation.svcDisability": "value: 1.0",
+  "assumption.medical.singleParty.election.svcDisability": "value: 0.2",
+  "assumption.medical.participation.disability": "value: 1.0",
+  "assumption.medical.singleParty.election.disability": "value: 0.2",
+  "assumption.medical.participation.retirement": "value: 1.0",
+  "assumption.medical.singleParty.election.retirement": "value: 0.2",
+  
+  "provision.medical.vesting.disability": "value:1.0",
+  "provision.medical.vesting.svcDisability": "value:1.0",
+  "provision.medical.vesting.svcSurvivor": "value:1.0",
+  "provision.medical.vesting.retirement": "table:Vesting\\Vacaville.OPEB.20yr.v1",
+  "provision.medical.vesting.survivor": "table:Vesting\\Vacaville.OPEB.20yr.v1",
+
+  ".class": {
+    "Misc": {
+      "assumption.marriedPct.female": "value:0.80",
+      "assumption.marriedPct.male": "value:0.80",
+      "assumption.salary.scale": "table:Salary\\CalPERS.2017.Salary.Misc.v1",
+      "assumption.active.disability.male.table": "table:Disability\\CalPERS.2017.Misc.Disability.Male.NonIndus.v1",
+      "assumption.active.disability.female.table": "table:Disability\\CalPERS.2017.Misc.Disability.Female.NonIndus.v1",
+      "assumption.active.mortality.male.table": "table:Mortality\\CalPERS.2017.Misc.PreRet.Male.NonIndus.v1",
+      "assumption.active.mortality.female.table": "table:Mortality\\CalPERS.2017.Misc.PreRet.Female.NonIndus.v1",
+      "assumption.retired.mortality.male.table": "table:Mortality\\CalPERS.2017.Misc.PostRet.Male.Healthy.v1",
+      "assumption.retired.mortality.female.table": "table:Mortality\\CalPERS.2017.Misc.PostRet.Female.Healthy.v1",
+      "assumption.disabled.mortality.female.table": "table:Mortality\\CalPERS.2017.Misc.PostRet.Female.Disabled.v1",
+      "assumption.disabled.mortality.male.table": "table:Mortality\\CalPERS.2017.Misc.PostRet.Male.Disabled.v1",
+      "assumption.termrefund.rate.male.table": "table:Termination\\CalPERS.2017.TermRefund.Misc.v1",
+      "assumption.termrefund.rate.female.table": "table:Termination\\CalPERS.2017.TermRefund.Misc.v1",
+      "assumption.termvested.rate.male.table": "table:Termination\\CalPERS.2017.TermVested.Misc.v1",
+      "assumption.termvested.rate.female.table": "table:Termination\\CalPERS.2017.TermVested.Misc.v1"
+    },
+    "Safety": {
+      "assumption.marriedPct.female": "value:0.80",
+      "assumption.marriedPct.male": "value:0.80",
+      "assumption.salary.scale": "table:Salary\\CalPERS.2017.Salary.Police.v1",
+      "assumption.active.disability.male.table": "table:Disability\\CalPERS.2017.Police.Disability.Male.NonIndus.v1",
+      "assumption.active.disability.female.table": "table:Disability\\CalPERS.2017.Police.Disability.Female.NonIndus.v1",
+      "assumption.active.svcDisability.male.table": "table:Disability\\CalPERS.2017.Police.Disability.Male.Indus.v1",
+      "assumption.active.svcDisability.female.table": "table:Disability\\CalPERS.2017.Police.Disability.Female.Indus.v1",
+      "assumption.active.mortality.male.table": "table:Mortality\\CalPERS.2017.Police.PreRet.Male.NonIndus.v1",
+      "assumption.active.mortality.female.table": "table:Mortality\\CalPERS.2017.Police.PreRet.Female.NonIndus.v1",
+      "assumption.retired.mortality.male.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Male.Healthy.v1",
+      "assumption.retired.mortality.female.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Female.Healthy.v1",
+      "assumption.active.svcMortality.male.table": "table:Mortality\\CalPERS.2017.Police.PreRet.Male.Indus.v1",
+      "assumption.active.svcMortality.female.table": "table:Mortality\\CalPERS.2017.Police.PreRet.Female.Indus.v1",
+      "assumption.svcDisabled.mortality.female.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Female.SvcDisabled.v1",
+      "assumption.svcDisabled.mortality.male.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Male.SvcDisabled.v1",
+      "assumption.disabled.mortality.female.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Female.Disabled.v1",
+      "assumption.disabled.mortality.male.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Male.Disabled.v1",
+      "assumption.termrefund.rate.male.table": "table:Termination\\CalPERS.2017.TermRefund.Police.v1",
+      "assumption.termrefund.rate.female.table": "table:Termination\\CalPERS.2017.TermRefund.Police.v1",
+      "assumption.termvested.rate.male.table": "table:Termination\\CalPERS.2017.TermVested.Police.v1",
+      "assumption.termvested.rate.female.table": "table:Termination\\CalPERS.2017.TermVested.Police.v1"
+    },
+    "Police": {
+      "assumption.marriedPct.female": "value:0.80",
+      "assumption.marriedPct.male": "value:0.80",
+      "assumption.salary.scale": "table:Salary\\CalPERS.2017.Salary.Police.v1",
+      "assumption.active.disability.male.table": "table:Disability\\CalPERS.2017.Police.Disability.Male.NonIndus.v1",
+      "assumption.active.disability.female.table": "table:Disability\\CalPERS.2017.Police.Disability.Female.NonIndus.v1",
+      "assumption.active.svcDisability.male.table": "table:Disability\\CalPERS.2017.Police.Disability.Male.Indus.v1",
+      "assumption.active.svcDisability.female.table": "table:Disability\\CalPERS.2017.Police.Disability.Female.Indus.v1",
+      "assumption.active.mortality.male.table": "table:Mortality\\CalPERS.2017.Police.PreRet.Male.NonIndus.v1",
+      "assumption.active.mortality.female.table": "table:Mortality\\CalPERS.2017.Police.PreRet.Female.NonIndus.v1",
+      "assumption.retired.mortality.male.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Male.Healthy.v1",
+      "assumption.retired.mortality.female.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Female.Healthy.v1",
+      "assumption.active.svcMortality.male.table": "table:Mortality\\CalPERS.2017.Police.PreRet.Male.Indus.v1",
+      "assumption.active.svcMortality.female.table": "table:Mortality\\CalPERS.2017.Police.PreRet.Female.Indus.v1",
+      "assumption.svcDisabled.mortality.female.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Female.SvcDisabled.v1",
+      "assumption.svcDisabled.mortality.male.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Male.SvcDisabled.v1",
+      "assumption.disabled.mortality.female.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Female.Disabled.v1",
+      "assumption.disabled.mortality.male.table": "table:Mortality\\CalPERS.2017.Police.PostRet.Male.Disabled.v1",
+      "assumption.termrefund.rate.male.table": "table:Termination\\CalPERS.2017.TermRefund.Police.v1",
+      "assumption.termrefund.rate.female.table": "table:Termination\\CalPERS.2017.TermRefund.Police.v1",
+      "assumption.termvested.rate.male.table": "table:Termination\\CalPERS.2017.TermVested.Police.v1",
+      "assumption.termvested.rate.female.table": "table:Termination\\CalPERS.2017.TermVested.Police.v1"
+    },
+    "Fire": {
+      "assumption.marriedPct.female": "value:0.80",
+      "assumption.marriedPct.male": "value:0.80",
+      "assumption.salary.scale": "table:Salary\\CalPERS.2017.Salary.Fire.v1",
+      "assumption.active.disability.male.table": "table:Disability\\CalPERS.2017.Fire.Disability.Male.NonIndus.v1",
+      "assumption.active.disability.female.table": "table:Disability\\CalPERS.2017.Fire.Disability.Female.NonIndus.v1",
+      "assumption.active.svcDisability.male.table": "table:Disability\\CalPERS.2017.Fire.Disability.Male.Indus.v1",
+      "assumption.active.svcDisability.female.table": "table:Disability\\CalPERS.2017.Fire.Disability.Female.Indus.v1",
+      "assumption.active.mortality.male.table": "table:Mortality\\CalPERS.2017.Fire.PreRet.Male.NonIndus.v1",
+      "assumption.active.mortality.female.table": "table:Mortality\\CalPERS.2017.Fire.PreRet.Female.NonIndus.v1",
+      "assumption.retired.mortality.male.table": "table:Mortality\\CalPERS.2017.Fire.PostRet.Male.Healthy.v1",
+      "assumption.retired.mortality.female.table": "table:Mortality\\CalPERS.2017.Fire.PostRet.Female.Healthy.v1",
+      "assumption.active.svcMortality.male.table": "table:Mortality\\CalPERS.2017.Fire.PreRet.Male.Indus.v1",
+      "assumption.active.svcMortality.female.table": "table:Mortality\\CalPERS.2017.Fire.PreRet.Female.Indus.v1",
+      "assumption.svcDisabled.mortality.female.table": "table:Mortality\\CalPERS.2017.Fire.PostRet.Female.SvcDisabled.v1",
+      "assumption.svcDisabled.mortality.male.table": "table:Mortality\\CalPERS.2017.Fire.PostRet.Male.SvcDisabled.v1",
+      "assumption.disabled.mortality.female.table": "table:Mortality\\CalPERS.2017.Fire.PostRet.Female.Disabled.v1",
+      "assumption.disabled.mortality.male.table": "table:Mortality\\CalPERS.2017.Fire.PostRet.Male.Disabled.v1",
+      "assumption.termrefund.rate.male.table": "table:Termination\\CalPERS.2017.TermRefund.Fire.v1",
+      "assumption.termrefund.rate.female.table": "table:Termination\\CalPERS.2017.TermRefund.Fire.v1",
+      "assumption.termvested.rate.male.table": "table:Termination\\CalPERS.2017.TermVested.Fire.v1",
+      "assumption.termvested.rate.female.table": "table:Termination\\CalPERS.2017.TermVested.Fire.v1"
+    }
+  },
+
+  ".classAndTier": {
+    "Misc.Tier1.Classic.2@55": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Misc.2pct@55.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Misc.2pct@55.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age50Service5"
+    },
+    "Misc.Tier1.PEPRA": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Misc.2pct@62.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Misc.2pct@62.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age52Service5"
+    },
+    "Safety.Classic.2@50": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Police.2pct@50.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Police.2pct@50.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age50Service5"
+    },
+    "Safety.Classic.30@50": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Police.3pct@50.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Police.3pct@50.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age50Service5"
+    },
+    "Safety.PEPRA.2@57": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Police.2pct@57.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Police.2pct@57.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age50Service5"
+    },
+    "Police.Classic.2@50": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Police.2pct@50.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Police.2pct@50.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age50Service5"
+    },
+    "Police.Classic.30@50": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Police.3pct@50.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Police.3pct@50.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age50Service5"
+    },
+    "Police.PEPRA.2@57": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Police.2pct@57.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Police.2pct@57.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age50Service5"
+    },
+    "Fire.Classic.2@50": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Fire.2pct@50.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Fire.2pct@50.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age50Service5"
+    },
+    "Fire.Classic.30@50": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Fire.3pct@50.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Fire.3pct@50.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age50Service5"
+    },
+    "Fire.PEPRA.2@57": {
+      "assumption.retirement.male.table": "table:Retirement\\CalPERS.2017.Fire.2pct@57.v1",
+      "assumption.retirement.female.table": "table:Retirement\\CalPERS.2017.Fire.2pct@57.v1",
+      "provision.benefit.retirement.eligibilityRule": "Age50Service5"
+    }
+  },
+
+  ".bargainingUnit": {
+    "A1": {
+      "provision.opeb.simpleRates": "table:Premiums\\Vacaville.OPEB.2017.A1.v1"
+    },
+    "A2": {
+      "provision.opeb.simpleRates": "table:Premiums\\Vacaville.OPEB.2017.A2.v1"
+    },
+    "A3": {
+      "provision.opeb.simpleRates": "table:Premiums\\Vacaville.OPEB.2017.A3.v1"
+    },
+    "R1": {
+      "provision.opeb.simpleRates": "table:Premiums\\Vacaville.OPEB.2017.A1.v1"
+    },
+    "R2": {
+      "provision.opeb.simpleRates": "table:Premiums\\Vacaville.OPEB.2017.A2.v1"
+    },
+    "R3": {
+      "provision.opeb.simpleRates": "table:Premiums\\Vacaville.OPEB.2017.A3.v1"
+    },
+    "R4": {
+      "provision.opeb.simpleRates": "table:Premiums\\Vacaville.OPEB.2017.v1"
+    },
+    "R5": {
+      "provision.opeb.simpleRates": "table:Premiums\\Vacaville.OPEB.2017.v1"
+    }
+  },
+
+  "enable.zeroBenefit.refund": true,
+  "disable.term.retire.eligible": true,
+  "enable.valYear.historical.input": true,
+  "enable.zeroFloor.amortization": true,
+  "enable.ageNearest": true,
+
+  "dummy": "0"
+}
