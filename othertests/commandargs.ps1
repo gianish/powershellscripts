@@ -9,3 +9,12 @@ if ($command -eq 'command1'){
      exit
 }
 
+if ($command -eq 'command2'){
+     write-host 'output2'
+     exit
+}
+
+if ($command -eq 'command3'){
+     write-host 'output3'
+     exit
+}
