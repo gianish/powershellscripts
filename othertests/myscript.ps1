@@ -2,14 +2,21 @@
 #anish king
 #june 2018
 
-$args = 
+#$text = $args[0]
+#$replacer = $args[1]
 
-
-function replace-text(){
-    $r = $r.Replace('{$FLAG}', $)
+function print-out(){
+    Write-Host "$($args[0])"
+    Write-Host "$($args[1])"
 }
 
-replace-text $FLAG
+print-out
+
+#function replace-text(){
+#    $r = $r.Replace('{$FLAG}', $)
+#}
+
+#replace-text $FLAG
 
 
 
