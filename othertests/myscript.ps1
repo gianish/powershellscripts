@@ -2,20 +2,14 @@
 #anish king
 #june 2018
 
+$args = 
 
 
 function replace-text(){
-    $r = $r.Replace()
+    $r = $r.Replace('{$FLAG}', $)
 }
 
 replace-text $FLAG
-
-
-
-
-
-
-
 
 
 
