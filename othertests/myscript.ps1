@@ -5,12 +5,13 @@
 #$text = $args[0]
 #$replacer = $args[1]
 
-function print-out(){
-    Write-Host "$($args[0])"
-    Write-Host "$($args[1])"
-}
+#function print-out(){
+#    Write-Host "$($args[0])"
+#    Write-Host "$($args[1])"
+#    Write-Host $($args[0])
+#}
 
-print-out
+#print-out
 
 #function replace-text(){
 #    $r = $r.Replace('{$FLAG}', $)
