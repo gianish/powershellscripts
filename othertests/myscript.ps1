@@ -2,22 +2,9 @@
 #anish king
 #june 2018
 
-#$text = $args[0]
-#$replacer = $args[1]
+$var1 = $args[0] 
+$var2 = $args[1] 
 
-#function print-out(){
-#    Write-Host "$($args[0])"
-#    Write-Host "$($args[1])"
-#    Write-Host $($args[0])
-#}
-
-#print-out
-
-#function replace-text(){
-#    $r = $r.Replace('{$FLAG}', $)
-#}
-
-#replace-text $FLAG
-
-#https://www.regular-expressions.info/powershell.html
-
+get-content myfile.txt
+#foreach-object {$_ -replace '$var1', '$var2'} |
+#out-file myfile.txt
