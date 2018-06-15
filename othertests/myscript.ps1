@@ -19,5 +19,5 @@
 
 #replace-text $FLAG
 
-
+#https://www.regular-expressions.info/powershell.html
 
